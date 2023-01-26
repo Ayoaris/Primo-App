@@ -10,6 +10,7 @@ interface Props {
   height: string;
   onClick: () => void;
   width: string;
+  
 }
 
 const Button: React.FC<Props> = ({
@@ -21,6 +22,7 @@ const Button: React.FC<Props> = ({
   height,
   onClick,
   width,
+  
 }) => {
   return (
     <button
@@ -32,6 +34,7 @@ const Button: React.FC<Props> = ({
         border,
         height,
         width,
+       
       }}
     >
       {children}

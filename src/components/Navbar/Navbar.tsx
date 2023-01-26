@@ -12,7 +12,8 @@ const Navbar: FC = () => {
       </div>
 
       <div className={styles.navbar_links}>
-        <Link to="/login">Login</Link>
+        {/* <Link to={"jfjfj"}>login</Link> */}
+        {/* <Link to="/login">Login</Link> */}
         <Button
           border="none"
           backgroundColor="#CC0201"
@@ -22,9 +23,10 @@ const Navbar: FC = () => {
           onClick={() => console.log("You clicked on the login!")}
           width="198px"
           children="Schedule a pick up"
+
         />
       </div>
-      <div></div>
+      {/* <div></div> */}
     </div>
   );
 };
