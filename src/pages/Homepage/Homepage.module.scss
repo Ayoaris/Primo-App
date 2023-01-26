@@ -1,0 +1,20 @@
+// GLOBAL VARIABLES OF COLORS
+$primary:#FFFFFF;
+$secondary:#ABB3BB;
+$tertiary:#CC0201;
+
+// GLOBAL VARIABLES OF FONTS
+$font-primary: 'Source Sans Pro';
+$font-secondary:'Montserrat';
+$font-tertiary:'Quicksand';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-primary;
+}
+
+.Container{
+    background-color: red;
+}

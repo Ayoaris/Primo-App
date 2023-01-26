@@ -1,0 +1,71 @@
+// GLOBAL VARIABLES OF COLORS
+$primary:#FFFFFF;
+$secondary:#ABB3BB;
+$tertiary:#CC0201;
+
+// GLOBAL VARIABLES OF FONTS
+$font-primary: 'Source Sans Pro';
+$font-secondary:'Montserrat';
+$font-tertiary:'Quicksand';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-primary;
+}
+
+.Register{
+    height: 100vh;
+
+.form{
+    width:580px;
+    height:auto;
+    margin: auto;
+    color: #707070;
+    padding:50px 30px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+h3{
+ color: #707070;
+    margin-top: 4.92rem;
+    margin-bottom:2.2rem;
+    text-align: center;
+}
+.double{
+    display: flex;
+    flex-direction: row;
+     justify-content: space-between;
+     margin-bottom: 20px;
+    // align-items: center;
+}
+.input{
+    width:100%;
+    font-size: medium;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #DDDFE1;
+    background-color: #FFFFFF;
+}
+.label{
+    width: 137px;
+    height: 27px;
+    color: #464A53;
+    font-size: medium;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+.btn_section{
+    align-items:flex-end;
+    margin: 0 95px;
+    
+   p{
+    margin-top: 20px;
+    color: #707070;
+    font-family: $font-primary;
+    text-align: center;
+
+   }
+}
+}

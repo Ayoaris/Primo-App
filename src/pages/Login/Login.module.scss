@@ -1,0 +1,67 @@
+// GLOBAL VARIABLES OF COLORS
+$primary:#FFFFFF;
+$secondary:#ABB3BB;
+$tertiary:#CC0201;
+
+// GLOBAL VARIABLES OF FONTS
+$font-primary: 'Source Sans Pro';
+$font-secondary:'Montserrat';
+$font-tertiary:'Quicksand';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-primary;
+}
+
+.login{
+h3{
+    color: #707070;
+    margin-top: 4.92rem;
+    margin-bottom:2.2rem;
+    text-align: center;
+}
+p{
+    color: #707070;
+    font-family: $font-primary;
+}
+
+.form{ 
+     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 787px;
+    height: 359px;
+    margin: auto;
+    padding: 44px 32px;
+}
+
+.label{
+    width: 137px;
+    height: 27px;
+    color: #464A53;
+    font-size: medium;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+.input{
+    width:100%;
+    font-size: medium;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #DDDFE1;
+    background-color: #FFFFFF;
+}
+.button_container{
+    display: flex;
+    
+p{
+    color: #707070;
+    font-family: $font-primary;
+    align-items: center;
+    text-align: center;
+    margin: auto 1.9rem;
+}
+}
+}
+    
