@@ -1,0 +1,45 @@
+// GLOBAL VARIABLES OF COLORS
+$primary:#FFFFFF;
+$secondary:#ABB3BB;
+$tertiary:#CC0201;
+
+// GLOBAL VARIABLES OF FONTS
+$font-primary: 'Source Sans Pro';
+$font-secondary:'Montserrat';
+$font-tertiary:'Quicksand';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-primary;
+}
+.navbar{
+    background-color: $primary;
+    height: 5rem;
+    border: 1px solid $tertiary;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8rem;   
+}
+
+.navbar_links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    margin-left:55vw;
+
+    .login{
+        color: $secondary;
+        font-weight: 600;
+        text-decoration: none;
+        margin-left: 2rem;
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            color: $tertiary;
+        }
+    }
+    
+}
