@@ -28,8 +28,11 @@ $font-tertiary: "Quicksand";
   align-items: center;
   padding: 0 8rem;
   z-index: 3;
-  opacity: 0.9;
-    
+  opacity: 0.9;  
+}
+// for mobile version should be display: none
+.mobileNavigation{
+  display: none;
 }
 
 .navbar_links {
@@ -39,8 +42,8 @@ $font-tertiary: "Quicksand";
   width: 30%;
 
 
-  .login {
-    color: $secondary;
+  p {
+    color: #707070;
     }
   }
 
@@ -54,9 +57,14 @@ $font-tertiary: "Quicksand";
 }
 .navbar_links {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  width: 25%;
+  // width: 25%;
+  p{
+    font-size: 1.2rem;
+    margin-right: 2rem;
+  }
+ 
 }
 }
 
@@ -70,6 +78,20 @@ $font-tertiary: "Quicksand";
 
 // mobile
 @media only screen and (max-width: 576px) {
+.Desktop{
+  display: none;
+}
+.mobileNavigation{
+  display: flex;
+  align-items: center;
+  margin: 0 1rem;
+}
+.mobileNavigation .hamburger {
+  position: absolute;
+   right: 5%;
+   top:15px;
+   cursor: pointer;
+}
   .navbar {
   height: 4rem;
   width: 100%;
@@ -80,7 +102,10 @@ $font-tertiary: "Quicksand";
   justify-content: space-around;
   align-items: center;
   width: 30%;
-
+}
+.navbar_links ul {
+  display: flex;
+  color:red;
 }
 
 }

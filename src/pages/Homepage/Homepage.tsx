@@ -5,7 +5,9 @@ const Homepage: FC = ()=> {
   return (
       <div className={styles.Container}>
           <Navbar/>
-      <p>HomePages layout</p>
+      <div className={styles.Hero}>
+        <h1>Your Reliable Doortep</h1>
+      </div>
     </div>
   )
 }

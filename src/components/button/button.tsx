@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React from "react";
 
 
 interface Props {
@@ -10,6 +10,7 @@ interface Props {
   height: string;
   onClick: () => void;
   width: string;
+  fontSize: string;
   
 }
 
@@ -22,8 +23,7 @@ const Button: React.FC<Props> = ({
   height,
   onClick,
   width,
- 
-  
+  fontSize,
 }) => {
   return (
     <button
@@ -35,8 +35,7 @@ const Button: React.FC<Props> = ({
         border,
         height,
         width,
-       
-       
+        fontSize,
       }}
     >
       {children}

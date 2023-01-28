@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import {Link} from "react-router-dom";
 import Button from "../../components/button/button";
 import Navbar from "../../components/Navbar/Navbar";
 import styles from "./Register.module.scss";
@@ -46,7 +47,7 @@ const Register: FC = () => {
               required
             />
           </div>
-          <div className={styles.input_D} >
+          <div className={styles.input_D}>
             <label className={styles.label}>E-mail Address </label>
             <br />
             <input
@@ -90,10 +91,14 @@ const Register: FC = () => {
                 height="58px"
                 onClick={() => console.log("You clicked on the login!")}
                 width={"100%"}
+                fontSize="15px"
                 children="continue"
               />
             </div>
-            <p>Are you an existing customer? Login here</p>
+            <p>
+              Are you an existing customer? Login
+              <Link to="/login"> here.</Link>
+            </p>
           </div>
         </form>
       </div>
