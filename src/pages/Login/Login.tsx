@@ -11,7 +11,9 @@ const Login: FC = () => {
       <div className={styles.login}>
         <h3>Sign In</h3>
         <form className={styles.form}>
-          <div>
+                  <div>
+                      <div>
+                          
             <label className={styles.label}>E-mail Address </label>
             <br />
             <input
@@ -21,6 +23,7 @@ const Login: FC = () => {
               placeholder="you@address.com"
               required
             />
+                      </div>
 
             <label className={styles.label}>Password </label>
             <br />
@@ -33,17 +36,17 @@ const Login: FC = () => {
             />
           </div>
                 <div className={styles.button_container}>
-                    <Button
+                      <Button
                     border="none"
                     backgroundColor="#CC0201"
                     borderRadius="50px"
                     color="#D8D8D8"
                     height="58px"
                     onClick={() => console.log("You clicked on the login!")}
-                    width="330px"
+                    width="250px"
                     children="Sign in"
                     />
-                 {/* <p> New customer? Register <Link to ="/register" >here</ Link>.</p> */}
+                 <p> New customer? Register here.</p>
                 </div>
         </form>
       </div>

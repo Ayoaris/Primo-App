@@ -22,6 +22,7 @@ const Button: React.FC<Props> = ({
   height,
   onClick,
   width,
+ 
   
 }) => {
   return (
@@ -34,6 +35,7 @@ const Button: React.FC<Props> = ({
         border,
         height,
         width,
+       
        
       }}
     >

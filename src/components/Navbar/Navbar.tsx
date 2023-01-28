@@ -21,7 +21,7 @@ const Navbar: FC = () => {
           color="#D8D8D8"
           height="47px"
           onClick={() => console.log("You clicked on the login!")}
-          width="198px"
+          width="190px"
           children="Schedule a pick up"
 
         />

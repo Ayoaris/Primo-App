@@ -1,3 +1,6 @@
+
+
+
 // GLOBAL VARIABLES OF COLORS
 $primary: #ffffff;
 $secondary: #abb3bb;
@@ -18,6 +21,7 @@ $font-tertiary: "Quicksand";
 .navbar {
   background-color: $primary;
   height: 5rem;
+  width: 100%;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   display: flex;
   justify-content: space-between;
@@ -25,7 +29,7 @@ $font-tertiary: "Quicksand";
   padding: 0 8rem;
   z-index: 3;
   opacity: 0.9;
-
+    
 }
 
 .navbar_links {
@@ -33,16 +37,50 @@ $font-tertiary: "Quicksand";
   justify-content: space-between;
   align-items: center;
   width: 30%;
-  margin-left: 55vw;
+
 
   .login {
     color: $secondary;
-    font-weight: 600;
-    text-decoration: none;
-    margin-left: 2rem;
-    transition: all 0.3s ease-in-out;
-    &:hover {
-      color: $tertiary;
     }
   }
+
+// MEDIA QUERIES
+
+// laptop
+@media only screen and (max-width: 992px) {
+.navbar{
+  padding: 0 4rem;
+  width: 100%;
+}
+.navbar_links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 25%;
+}
+}
+
+// tablet
+@media only screen and (max-width: 768px) {
+.navbar{
+  padding: 0 5rem;
+  width: 100%;
+}
+}
+
+// mobile
+@media only screen and (max-width: 576px) {
+  .navbar {
+  height: 4rem;
+  width: 100%;
+  padding: 0 2rem;
+  }
+.navbar_links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 30%;
+
+}
+
 }
