@@ -9,6 +9,7 @@ const Navlinks :FC =()=> {
     <div>
             <ul className={styles.navbar_links}>
                 <li>Login</li>
+                
                 </ul>
           </div>
   )

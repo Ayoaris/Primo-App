@@ -17,20 +17,24 @@ const Navigation:FC=()=> {
           </div>
           <div className={styles.navbar_links}>
             <div>
-              <p>Login</p>
+              <Link to="/login">
+                <p>Login</p>
+              </Link>
             </div>
             <div>
-              <Button
-                border="none"
-                backgroundColor="#CC0201"
-                borderRadius="50px"
-                color="#D8D8D8"
-                height="47px"
-                onClick={() => console.log("You clicked on the login!")}
-                width="190px"
-                fontSize="20px"
-                children="Schedule a pick up"
-              />
+              <Link to="/login">
+                <Button
+                  border="none"
+                  backgroundColor="#CC0201"
+                  borderRadius="50px"
+                  color="#D8D8D8"
+                  height="47px"
+                  onClick={() => console.log("You clicked on the login!")}
+                  width="190px"
+                  fontSize="20px"
+                  children="Schedule a pick up"
+                />
+              </Link>
             </div>
           </div>
         </nav>

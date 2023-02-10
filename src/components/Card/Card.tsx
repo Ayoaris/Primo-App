@@ -1,8 +1,7 @@
 import React from "react";
 
-
 interface Props {
-  border: string;
+  boxShadow: string;
   backgroundColor: string;
   borderRadius: string;
   color: string;
@@ -12,12 +11,10 @@ interface Props {
   width: string;
   fontSize: string;
   margin?: string;
-  boxShadow?: string;
-  
 }
 
-const Button: React.FC<Props> = ({
-  border,
+const Card: React.FC<Props> = ({
+  boxShadow,
   color,
   backgroundColor,
   borderRadius,
@@ -27,26 +24,24 @@ const Button: React.FC<Props> = ({
   width,
   fontSize,
   margin,
-  boxShadow,
 }) => {
   return (
-    <button
+    <div
       onClick={onClick}
       style={{
         backgroundColor,
         borderRadius,
         color,
-        border,
+        boxShadow,
         height,
         width,
         fontSize,
         margin,
-        boxShadow,
       }}
     >
       {children}
-    </button>
+    </div>
   );
 };
 
-export default Button;
+export default Card;
